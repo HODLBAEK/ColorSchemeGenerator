@@ -1,0 +1,98 @@
+*,
+html {
+	margin: 0;
+	padding: 0;
+	font-family: "Nunito", sans-serif;
+	box-sizing: border-box;
+	font-size: 16px;
+}
+
+#color-drop-down,
+#get-color-scheme {
+	color: #d1d5db;
+}
+
+/*** positioning *****/
+
+header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	background: whitesmoke;
+	padding: 2em;
+}
+
+#color-value {
+	height: 3em;
+	width: 3em;
+	cursor: crosshair;
+}
+
+#color-value:hover,
+#color-value:focus {
+	transform: scale(1.1);
+}
+
+#color-drop-down {
+	background: #1f293a;
+	max-width: 80%;
+	min-width: 80%;
+	border: solid #d1d5db 2px;
+	border-radius: 5px;
+	padding: 0.5em;
+	cursor: pointer;
+}
+
+#color-drop-down:hover,
+#color-drop-down:focus {
+	transform: scale(1.04);
+}
+
+#get-color-scheme {
+	background: #3d4b60;
+	max-width: 80%;
+	min-width: 80%;
+	border: solid #d1d5db 2px;
+	border-radius: 5px;
+	padding: 0.55em;
+	cursor: pointer;
+}
+#get-color-scheme:hover,
+#get-color-scheme:focus {
+	transform: scale(1.03);
+}
+
+main {
+	height: 73vh;
+	max-height: 73vh;
+}
+
+main > div {
+	height: 20%;
+	background-color: orange;
+}
+
+.color {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+div > p {
+	text-transform: uppercase;
+	font-size: 1.3rem;
+}
+
+@media (min-width: 600px) {
+	main {
+		display: flex;
+	}
+	main > div {
+		background-color: green;
+		height: 100%;
+		width: 20%;
+	}
+	div > div {
+		text-align: center;
+	}
+}
